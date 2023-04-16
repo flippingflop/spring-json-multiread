@@ -1,0 +1,7 @@
+POST http://localhost:8080/api/hello-world
+Content-Type: application/json
+
+{
+  "jsonVariable1": "hello",
+  "jsonVariable2": "world"
+}

@@ -1,0 +1,18 @@
+POST http://localhost:8080/api/hello-world/multipart
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="req"
+Content-Type: application/json
+
+{
+  "jsonVariable1": "hello",
+  "jsonVariable2": "world"
+}
+
+--boundary
+Content-Disposition: form-data; name="multipartFile"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< ../image/test.jpg
+--boundary--
